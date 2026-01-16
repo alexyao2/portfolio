@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #3b82f6;
+  --card-border: #e5e7eb;
+}
+
+.dark {
+  --bg-color: #111111;
+  --text-color: #f9fafb;
+  --accent-color: #60a5fa;
+  --card-border: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}

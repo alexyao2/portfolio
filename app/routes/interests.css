@@ -1,0 +1,66 @@
+.interests-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 20px;
+  }
+  
+  .interests-header {
+    margin-bottom: 60px;
+  }
+  
+  .back-link {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .interests-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  
+  .interests-subtitle {
+    opacity: 0.7;
+    font-size: 1.1rem;
+  }
+  
+  /* THE VIDEO GRID */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+  }
+  
+  .video-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-card .video-wrapper {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Keeps all video boxes uniform */
+    background: #000;
+  }
+  
+  .video-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .interests-title {
+      font-size: 2.2rem;
+    }
+  }
