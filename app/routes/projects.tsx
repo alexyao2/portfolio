@@ -28,7 +28,7 @@ export default function Projects() {
   return (
     <main className="projects-wrapper">
       <header className="page-header">
-        <Link to="/" className="back-link">← Back to Home</Link>
+        <Link to="/portfolio" className="back-link">← Back to Home</Link>
         <h1>Latest Projects</h1>
         <p>What I'm working on in my free time:</p>
       </header>

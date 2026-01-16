@@ -49,7 +49,7 @@ export default function Home() {
             </ul>
           </div>
           
-          <Link to="/projects" className="view-all-link">View all projects →</Link>
+          <Link to="/portfolio/projects" className="view-all-link">View all projects →</Link>
         </section>
         
         {/* Miscellaneous Section */}
@@ -80,7 +80,7 @@ export default function Home() {
                   <li>After Effects</li>
                 </ul>
               </div>
-              <Link to="/interests" className="view-link">View other interests →</Link>
+              <Link to="/portfolio/interests" className="view-link">View other interests →</Link>
             </div>
             
             {/* TFT Column */}
