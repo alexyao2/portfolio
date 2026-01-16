@@ -494,7 +494,7 @@
     .footer-socials {
       justify-content: flex-start;
     }
-    misc-grid {
+    .misc-grid {
       display: flex;
       flex-direction: column; /* Stack them vertically */
     }

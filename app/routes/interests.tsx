@@ -11,7 +11,7 @@ export default function Interests() {
   return (
     <main className="interests-wrapper">
       <header className="interests-header">
-        <Link to="/portfolio" className="back-link">← Back to Home</Link>
+        <Link to="/" className="back-link">← Back to Home</Link>
         <h1 className="interests-title">Interests & Edits</h1>
         <p className="interests-subtitle">A collection of my video editing work and creative hobbies.</p>
       </header>
