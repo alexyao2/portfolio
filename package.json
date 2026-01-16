@@ -6,7 +6,7 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp build/client/__spa-fallback.html build/client/index.html && cp build/client/__spa-fallback.html build/client/404.html",
     "deploy": "gh-pages -d build/client",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"

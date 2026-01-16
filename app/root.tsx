@@ -48,27 +48,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   const [theme, setTheme] = useState("dark");
 
-  // Toggle function to pass to the Navbar
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
+    // This correctly toggles the class on the root element
     document.documentElement.classList.toggle("light");
   };
 
+  // REMOVE the html, head, and body tags here
   return (
-    <html lang="en" className={theme}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body>
-        {/* We pass the toggle function to the Navbar so the button can live there */}
-        <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-        <Outlet /> 
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+    <>
+      <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
+      <Outlet /> 
+    </>
   );
 }
 
