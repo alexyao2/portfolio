@@ -1,5 +1,6 @@
 //import type { Route } from "./+types/projects";
 import "./projects.css";
+import { Link } from "react-router";
 
 export default function Projects() {
   const myProjects = [
@@ -27,7 +28,7 @@ export default function Projects() {
   return (
     <main className="projects-wrapper">
       <header className="page-header">
-        <a href="/" className="back-link">← Back to Home</a>
+        <Link to="/" className="back-link">← Back to Home</Link>
         <h1>Latest Projects</h1>
         <p>What I'm working on in my free time:</p>
       </header>

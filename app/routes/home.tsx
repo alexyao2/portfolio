@@ -1,5 +1,5 @@
 import "./home.css";
-
+import { Link } from "react-router";
 export default function Home() {
   return (
     <>
@@ -49,7 +49,7 @@ export default function Home() {
             </ul>
           </div>
           
-          <a href="/projects" className="view-all-link">View all projects →</a>
+          <Link to="/projects" className="view-all-link">View all projects →</Link>
         </section>
         
         {/* Miscellaneous Section */}
@@ -80,7 +80,7 @@ export default function Home() {
                   <li>After Effects</li>
                 </ul>
               </div>
-              <a href="/Interests" className="view-all-link">View other interests →</a>
+              <Link to="/interests" className="view-link">View other interests →</Link>
             </div>
             
             {/* TFT Column */}
