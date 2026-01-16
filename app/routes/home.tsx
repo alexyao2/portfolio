@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             
             <div className="hero-image-container">
-              <img src="profile.jpg" alt="Alexander Yao Profile" className="profile-circle" />
+              <img src="./profile.jpg" alt="Alexander Yao Profile" className="profile-circle" />
             </div>
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="featured-project-card tft-card">
                 <div className="card-top">
                   <a href="https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/what-is-teamfight-tactics/" target="_blank" rel="noreferrer" className="tft-banner-link">
-                    <img src="tft.jpg" alt="TFT Logo" className="tft-logo" />
+                    <img src="./tft.jpg" alt="TFT Logo" className="tft-logo" />
                   </a>
 
                   <div className="tft-header-right">
@@ -107,7 +107,7 @@ export default function Home() {
 
                 <div className="tft-embed-content">
                   <div className="rank-emblem-wrapper">
-                    <img src="tft-rank.png" alt="TFT Rank" className="tft-rank-image" />
+                    <img src="./tft-rank.png" alt="TFT Rank" className="tft-rank-image" />
                   </div>
                   
                   <div className="rank-stats">
