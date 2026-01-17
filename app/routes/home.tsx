@@ -15,7 +15,7 @@ export default function Home() {
                 with a passion for building impactful applications and exploring new technologies!
               </p>
               <p className="hero-cta">
-                I'm currently doing research @ George Mason University. In my free time I enjoy filming/editing videos, playing video games, and exploring new music! You can find my <a href="/resume.pdf" className="internal-link">resume here</a>.
+                I'm currently doing research @ George Mason University. In my free time I enjoy filming/editing videos, playing video games, and exploring new music! You can find my <a href="/portfolio/resume.pdf" className="internal-link">resume here</a>.
               </p>
             </div>
             
@@ -80,7 +80,7 @@ export default function Home() {
                   <li>After Effects</li>
                 </ul>
               </div>
-              <Link to="/portfolio/interests" className="view-link">View other interests →</Link>
+              <Link to="/portfolio/interests" className="view-all-link">View other interests →</Link>
             </div>
             
             {/* TFT Column */}

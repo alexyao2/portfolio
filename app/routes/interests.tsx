@@ -1,5 +1,6 @@
 import "./interests.css";
 import { Link } from "react-router";
+import YouTubeEmbed from "~/components/YouTubeEmbed";
 
 export default function Interests() {
   const videoEdits = [
@@ -9,33 +10,29 @@ export default function Interests() {
   ];
 
   return (
-    <main className="interests-wrapper">
-      <header className="interests-header">
-        <Link to="/" className="back-link">← Back to Home</Link>
-        <h1 className="interests-title">Interests & Edits</h1>
-        <p className="interests-subtitle">A collection of my video editing work and creative hobbies.</p>
-      </header>
-
-      <section className="video-grid">
-        {videoEdits.map((video) => (
-          <div key={video.id} className="featured-project-card video-card">
-            <div className="video-wrapper">
-              <video controls preload="metadata" className="portfolio-video">
-                <source src={video.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="card-titles">
-              <h3>{video.title}</h3>
-            </div>
-            <div className="card-footer">
-              <ul className="tech-tags-minimal">
-                {video.tags.map(tag => <li key={tag}>{tag}</li>)}
-              </ul>
-            </div>
+    <div className="interests-wrapper">
+      <h1 className="section-label">Video Edits</h1>
+      
+      <div className="video-grid">
+        {/* Card 1 */}
+        <div className="featured-project-card">
+          <div className="card-titles">
+            <h3>Summer 2025 Vlog</h3>
+            <p>A cinematic look at my travels using Premiere Pro and After Effects.</p>
           </div>
-        ))}
-      </section>
-    </main>
+          
+          {/* Use the component here */}
+          <YouTubeEmbed 
+            videoId="dQw4w9WgXcQ" 
+            title="Summer Vlog 2025" 
+          />
+          
+          <ul className="tech-tags-minimal">
+            <li>Premiere Pro</li>
+            <li>Lumetri Color</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
