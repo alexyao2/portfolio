@@ -1,73 +1,84 @@
 .interests-wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 70px 10px;
+}
+
+.interests-section {
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-5px);
+}
+
+/* Video Grid */
+.video-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  margin: 0; /* Override default card margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Photo Masonry Grid */
+.photo-masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 16px;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Photo Sizes */
+.photo-item.wide { grid-column: span 2; }
+.photo-item.tall { grid-row: span 2; }
+
+@media (max-width: 768px) {
+  .video-gallery-grid {
+    grid-template-columns: 1fr;
   }
   
-  .interests-header {
-    margin-bottom: 60px;
+  .photo-masonry-grid {
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-auto-rows: 150px;
   }
   
-  .back-link {
-    text-decoration: none;
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 20px;
+  .photo-item.wide { grid-column: span 1; }
+  .interests-wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  
-  .interests-title {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 12px;
-  }
-  
-  .interests-subtitle {
-    opacity: 0.7;
-    font-size: 1.1rem;
-  }
-  
-  /* THE VIDEO GRID */
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 24px;
-    margin-top: 2rem;
-  }
-  
-  .video-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .video-container {
-    margin: 1.5rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background: #000; /* Prevents white flashes while loading */
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .video-card .video-wrapper {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    aspect-ratio: 16 / 9; /* Keeps all video boxes uniform */
-    background: #000;
-  }
-  
-  .video-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  /* Mobile Adjustments */
-  @media (max-width: 768px) {
-    .video-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .interests-title {
-      font-size: 2.2rem;
-    }
-  }
+}

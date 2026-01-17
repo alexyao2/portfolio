@@ -349,9 +349,16 @@
     background-color: #fbbf24;
     box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
   }
-  
+  .top-2 {
+    background-color: #D3D3D3;
+    box-shadow: 0 0 8px rgba(211, 211, 211, 0.4); 
+  }
+  .top-3 {
+    background-color: #7d6443;
+    box-shadow: 0 0 8px rgba(125, 100, 67, 0.4); 
+  }
   .top-4 {
-    background-color: #3b82f6;
+    background-color: #606669;
   }
   
   .bot-4 {

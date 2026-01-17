@@ -14,7 +14,7 @@ export default function Projects() {
       title: "Personal Website",
       description: "My personal website built with modern web technologies to showcase my portfolio and blog posts.",
       tags: ["React", "CSS", "HTML"],
-      link: "#",
+      link: "https://github.com/alexyao2/portfolio",
     },
     {
       title: "Racket Compiler",

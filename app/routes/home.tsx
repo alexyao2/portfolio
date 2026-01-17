@@ -1,5 +1,6 @@
 import "./home.css";
 import { Link } from "react-router";
+import YouTubeEmbed from "~/components/YouTubeEmbed";
 export default function Home() {
   return (
     <>
@@ -35,7 +36,7 @@ export default function Home() {
                 <h3>Personal Portfolio</h3>
                 <p>A minimalist, dark-mode first portfolio site built to showcase technical projects and video editing hobbies.</p>
               </div>
-              <a href="https://github.com/yourusername/repo" target="_blank" rel="noreferrer" title="View Source" className="card-icon">
+              <a href="https://github.com/alexyao2/portfolio" target="_blank" rel="noreferrer" title="View Source" className="card-icon">
                 <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -49,7 +50,7 @@ export default function Home() {
             </ul>
           </div>
           
-          <Link to="/portfolio/projects" className="view-all-link">View all projects →</Link>
+          <Link to="/projects" className="view-all-link">View all projects →</Link>
         </section>
         
         {/* Miscellaneous Section */}
@@ -69,18 +70,18 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                
-                <video controls className="portfolio-video" preload="metadata">
-                  <source src="/videos/video1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+
+                <YouTubeEmbed 
+                  videoId="d-VbD_ADaEs" 
+                  title="Summer Vlog 2025" 
+                />
                 
                 <ul className="tech-tags-minimal">
                   <li>Premier Pro</li>
                   <li>After Effects</li>
                 </ul>
               </div>
-              <Link to="/portfolio/interests" className="view-all-link">View other interests →</Link>
+              <Link to="/interests" className="view-all-link">View other interests →</Link>
             </div>
             
             {/* TFT Column */}
@@ -113,28 +114,28 @@ export default function Home() {
                   <div className="rank-stats">
                     <div className="stat-item">
                       <span className="stat-label">Rank</span>
-                      <span className="stat-value">Diamond II</span>
+                      <span className="stat-value">Masters</span>
                     </div>
                     <div className="stat-item">
                       <span className="stat-label">LP</span>
-                      <span className="stat-value">24 LP</span>
+                      <span className="stat-value">0 LP</span>
                     </div>
                     <div className="stat-item">
                       <span className="stat-label">Top 4 Rate</span>
-                      <span className="stat-value">68.1%</span>
+                      <span className="stat-value">70%</span>
                     </div>
                     <div className="stat-item">
                       <span className="stat-label">Win Rate</span>
-                      <span className="stat-value">16.7%</span>
+                      <span className="stat-value">20%</span>
                     </div>
                     <div className="stat-item match-history-row">
                       <span className="stat-label">Last 5</span>
                       <div className="placement-list">
+                        <span className="placement bot-4">7</span>
+                        <span className="placement top-2">2</span>
+                        <span className="placement top-2">2</span>
                         <span className="placement top-1">1</span>
-                        <span className="placement top-4">3</span>
-                        <span className="placement bot-4">6</span>
-                        <span className="placement top-4">2</span>
-                        <span className="placement top-1">1</span>
+                        <span className="placement bot-4">5</span>
                       </div>
                     </div>
                   </div>
