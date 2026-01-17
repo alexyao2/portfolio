@@ -52,14 +52,50 @@ export default function Home() {
           
           <Link to="/projects" className="view-all-link">View all projects →</Link>
         </section>
-        
+        {/* Skills Section */}
+        <section className="info-section">
+          <h2 className="section-label">Skills</h2>
+          <div className="technical-skills-grid">
+            <div className="skill-item">
+              <h3>Languages</h3>
+              <ul>
+                <li>JavaScript / TypeScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C / C++</li>
+                <li>HTML & CSS</li>
+              </ul>
+            </div>
+            <div className="skill-item">
+              <h3>Frameworks & Libraries</h3>
+              <ul>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Flask</li>
+                <li>Pandas</li>
+              </ul>
+            </div>
+            <div className="skill-item">
+              <h3>Tools & Platforms</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>VS Code</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Miscellaneous Section */}
         <section className="info-section">
           <h2 className="section-label">Miscellaneous!</h2>
           <div className="skills-grid misc-grid">
             {/* Video & Photo Column */}
             <div className="misc-column media-column">
-              <h3>Video & Photo</h3>
+              <h3>Photo & Video</h3>
               <p>Some past and current work</p>
               <div className="featured-project-card">
                 <div className="card-top">

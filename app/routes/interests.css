@@ -29,10 +29,31 @@
 }
 
 .video-card {
-  margin: 0; /* Override default card margin */
+  background: rgba(255, 255, 255, 0.03); /* Matching your dark-mode card background */
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 16px; /* Adds space between text and video */
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.video-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-4px);
+}
+
+/* Fix the alignment of titles and tags inside the card */
+.video-card .card-titles h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.video-card .tech-tags-minimal {
+  margin-top: auto; /* Pushes tags to the bottom of the card */
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Photo Masonry Grid */

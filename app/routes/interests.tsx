@@ -45,10 +45,9 @@ export default function Interests() {
         <h1 className="section-label">Videos</h1>
         <div className="video-gallery-grid">
           {videoEdits.map((video) => (
-            <div key={video.id} className="featured-project-card video-card">
+            <div key={video.id} className="featured-project-card video-card"> 
               <div className="card-titles">
                 <h3>{video.title}</h3>
-                <p>{video.description}</p>
               </div>
               
               <YouTubeEmbed videoId={video.videoId} title={video.title} />
