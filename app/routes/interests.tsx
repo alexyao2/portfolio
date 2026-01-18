@@ -14,7 +14,7 @@ export default function Interests() {
     { 
       id: 2, 
       title: "UMCPTASA Junior Officer Intro", 
-      videoId: "2U2Oq79ArDk", // Replace with your ID
+      videoId: "h5Kt-jZ2Yfg", // Replace with your ID
       description: "Junior Officers '24-'25 Reveal Video.",
       tags: ["Color Grading", "Premiere Pro"] 
     },
@@ -48,6 +48,7 @@ export default function Interests() {
             <div key={video.id} className="featured-project-card video-card"> 
               <div className="card-titles">
                 <h3>{video.title}</h3>
+                <p className="video-description">{video.description}</p>
               </div>
               
               <YouTubeEmbed videoId={video.videoId} title={video.title} />

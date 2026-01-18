@@ -46,14 +46,39 @@
 
 /* Fix the alignment of titles and tags inside the card */
 .video-card .card-titles h3 {
+  font-family: 'Inter', sans-serif; /* Ensures consistency with Home page */
   font-size: 1.25rem;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.video-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  opacity: 0.7; /* This creates the professional "muted" look */
 }
 
 .video-card .tech-tags-minimal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
   margin-top: auto; /* Pushes tags to the bottom of the card */
   padding-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-card .tech-tags-minimal li {
+  font-family: 'Courier New', monospace; /* Monospace aesthetic for tech tags */
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.5;
+  margin-right: 12px;
+
 }
 
 /* Photo Masonry Grid */

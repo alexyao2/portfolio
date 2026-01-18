@@ -202,80 +202,57 @@
     letter-spacing: 1px;
   }
   
-/* ==========================================================================
-     SKILLS GRID
- ========================================================================== */
-
-/* Skills Grid Layout */
-.technical-skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for skills */
-  gap: 2.5rem;
-  margin-top: 1.5rem;
-}
-
-.skill-item h3 {
-  font-family: 'Inter', sans-serif; /* Consistent with your headers */
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  color: var(--text-color);
-  letter-spacing: -0.02em;
-}
-
-/* List Styling */
-.skill-item ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem; /* Space between each skill */
-}
-
-.skill-item li {
-  font-family: 'Courier New', monospace; /* Monospace for the "developer" look */
-  font-size: 0.95rem;
-  color: var(--text-color);
-  opacity: 0.7;
-  display: flex;
-  align-items: center;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-/* Subtle hover effect to make it interactive */
-.skill-item li:hover {
-  opacity: 1;
-  color: var(--accent-color);
-  transform: translateX(5px);
-}
-
-/* Add a small dot before each skill for visual flair */
-.skill-item li::before {
-  content: "•";
-  color: var(--accent-color);
-  margin-right: 10px;
-  font-family: sans-serif;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 800px) {
-  .skills-grid {
-    grid-template-columns: 1fr; /* Stack vertically on phones */
-    gap: 2rem;
+  /* ==========================================================================
+     TECHNICAL SKILLS GRID
+     ========================================================================== */
+  .technical-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 1.5rem;
   }
   
-  .skill-item {
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--card-border);
+  .skill-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--text-color);
+    letter-spacing: -0.02em;
   }
   
-  .skill-item:last-child {
-    border-bottom: none;
+  .skill-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
-}
-
-
+  
+  .skill-item li {
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .skill-item li:hover {
+    opacity: 1;
+    color: var(--accent-color);
+    transform: translateX(5px);
+  }
+  
+  .skill-item li::before {
+    content: "•";
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-family: sans-serif;
+  }
+  
   /* ==========================================================================
      VIDEO PLAYER
      ========================================================================== */
@@ -329,8 +306,8 @@
   .tft-header-right p {
     margin: 0;
     font-family: 'Courier New', monospace;
-    opacity: 0.6;
     font-size: 1.2rem;
+    opacity: 0.6;
   }
   
   .tft-header-right a {
@@ -423,14 +400,17 @@
     background-color: #fbbf24;
     box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
   }
+  
   .top-2 {
-    background-color: #D3D3D3;
-    box-shadow: 0 0 8px rgba(211, 211, 211, 0.4); 
+    background-color: #d3d3d3;
+    box-shadow: 0 0 8px rgba(211, 211, 211, 0.4);
   }
+  
   .top-3 {
     background-color: #7d6443;
-    box-shadow: 0 0 8px rgba(125, 100, 67, 0.4); 
+    box-shadow: 0 0 8px rgba(125, 100, 67, 0.4);
   }
+  
   .top-4 {
     background-color: #606669;
   }
@@ -440,16 +420,18 @@
     opacity: 0.6;
   }
   
-  /* ==========================================================================
-     FOOTER
-     ========================================================================== */
+  /* ================================
+   Footer Styles
+   ================================ */
+
   .home-footer {
     width: 100%;
     background-color: #16181f;
     padding: 25px 0;
     margin-top: -80px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
+
   .footer-container {
     max-width: 1250px;
     margin: 0 auto;
@@ -458,32 +440,35 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  
+
+  /* Left Section */
   .footer-left {
     max-width: 400px;
   }
-  
+
   .footer-left p {
     font-size: 0.85rem;
     margin: 0;
+    color: var(--text-color);
     opacity: 0.8;
   }
-  
+
   .footer-subtext {
     margin-top: 4px;
     opacity: 0.5 !important;
   }
-  
+
   .copyright {
     margin-top: 20px !important;
     font-size: 0.75rem !important;
     opacity: 0.4 !important;
   }
-  
+
+  /* Right Section */
   .footer-right {
     text-align: right;
   }
-  
+
   .footer-site-link {
     display: block;
     text-decoration: none;
@@ -491,13 +476,14 @@
     font-weight: 600;
     margin-bottom: 12px;
   }
-  
+
+  /* Social Links */
   .footer-socials {
     display: flex;
     gap: 15px;
     justify-content: flex-end;
   }
-  
+
   .footer-socials a {
     text-decoration: none;
     color: var(--text-color);
@@ -505,98 +491,142 @@
     opacity: 0.6;
     transition: opacity 0.2s;
   }
-  
+
   .footer-socials a:hover {
     opacity: 1;
   }
-  
-  /* ==========================================================================
-     MOBILE RESPONSIVENESS
-     ========================================================================== */
-  @media (max-width: 800px) {
-    .home-wrapper {
-      padding: 60px 20px;
-    }
-  
-    .hero-section {
-      margin: 10px 25px 150px;
-    }
-  
-    .hero-flex-container {
-      flex-direction: column;
-      text-align: center;
-      gap: 2rem;
-    }
-  
-    .hero-image-container {
-      margin-top: 10px;
-    }
-  
-    .profile-circle {
-      margin-top: 70px;
-      width: 200px;
-      height: 200px;
-    }
-  
-    .hero-description,
-    .hero-cta {
-      font-size: 1rem;
-    }
-  
-    .skills-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  
-    .info-section {
-      padding: 32px 15px 0;
-    }
-  
-    .tft-card .card-top {
-      flex-direction: column-reverse;
-      gap: 20px;
-      align-items: flex-start;
-    }
-    
-    .tft-logo {
-      width: 100%;
-    }
-  
-    .footer-container {
-      flex-direction: column;
-      gap: 40px;
-      text-align: left;
-    }
-  
-    .footer-right {
-      text-align: left;
-    }
-  
-    .footer-socials {
-      justify-content: flex-start;
-    }
-    .misc-grid {
-      display: flex;
-      flex-direction: column; /* Stack them vertically */
-    }
-  
-    .tft-column {
-      order: 1; /* Moves to the top */
-    }
-  
-    .media-column {
-      order: 2; /* Moves below the TFT column */
-    }
+
+  /* ================================
+    Light Mode Overrides
+    ================================ */
+
+  .light .home-footer {
+    background-color: #f1f5f9;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .light .home-footer p {
+    color: #0f172a;
+    opacity: 0.9;
+  }
+
+  .light .footer-socials a {
+    color: #0f172a;
+    opacity: 0.6;
+  }
+
+  .light .footer-socials a:hover {
+    color: var(--accent-color);
+    opacity: 1;
+  }
+
+  .light .footer-subtext,
+  .light .copyright {
+    opacity: 0.5 !important;
   }
   
-  @media (max-width: 480px) {
-    .tft-embed-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-    }
-  
-    .rank-stats {
-      width: 100%;
-    }
+/* ==========================================================================
+    MOBILE RESPONSIVENESS
+    ========================================================================== */
+@media (max-width: 800px) {
+  .home-wrapper {
+    padding: 60px 20px;
   }
+
+  .hero-section {
+    margin: 10px 25px 150px;
+  }
+
+  .hero-flex-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-image-container {
+    margin-top: 10px;
+  }
+
+  .profile-circle {
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-description,
+  .hero-cta {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .technical-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skill-item {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .skill-item:last-child {
+    border-bottom: none;
+  }
+
+  .info-section {
+    padding: 32px 15px 0;
+  }
+
+  .tft-card .card-top {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .tft-logo {
+    width: 100%;
+  }
+
+  .misc-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tft-column {
+    order: 1;
+  }
+
+  .media-column {
+    order: 2;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .tft-embed-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .rank-stats {
+    width: 100%;
+  }
+}
