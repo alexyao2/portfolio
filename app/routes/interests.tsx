@@ -14,14 +14,14 @@ export default function Interests() {
     { 
       id: 2, 
       title: "UMCPTASA Junior Officer Intro", 
-      videoId: "h5Kt-jZ2Yfg", // Replace with your ID
+      videoId: "h5Kt-jZ2Yfg", 
       description: "Junior Officers '24-'25 Reveal Video.",
       tags: ["Color Grading", "Premiere Pro"] 
     },
     { 
       id: 3, 
       title: "Wiffleball Trip Vlog 2025", 
-      videoId: "hWi6ii4Ui4M", // Replace with your ID
+      videoId: "hWi6ii4Ui4M",
       description: "Lake Anna Retreat Vlog 2025",
       tags: ["Color Grading", "Premier Pro"] 
     },

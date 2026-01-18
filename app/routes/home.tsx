@@ -196,7 +196,7 @@ export default function Home() {
             <p className="copyright">© {new Date().getFullYear()} Alexander Yao. All rights reserved.</p>
           </div>
           <div className="footer-right">
-            <a href="/" className="footer-site-link">alexyao2.github.io/portfolio</a>
+            <Link to="/" className="footer-site-link">alexyao2.github.io/portfolio</Link>
             <div className="footer-socials">
               <a href="https://x.com/yaom3ister">Twitter</a>
               <a href="https://github.com/alexyao2">GitHub</a>

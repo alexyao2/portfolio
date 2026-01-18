@@ -2,13 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router";
 import "./Navbar.css";
 
-// 1. Define the "Shape" of the props
 interface NavbarProps {
   toggleTheme: () => void;
   currentTheme: string;
 }
 
-// 2. Use the interface in the component definition
 export default function Navbar({ toggleTheme, currentTheme }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,7 +21,6 @@ export default function Navbar({ toggleTheme, currentTheme }: NavbarProps) {
         <li><Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
         <li><Link to="/interests" onClick={() => setIsMenuOpen(false)}>Interests</Link></li>
         
-        {/* 3. The Theme Toggle Button */}
         <li>
           <button onClick={toggleTheme} className="theme-toggle">
             {currentTheme === "light" ? "🌙" : "☀️"}
