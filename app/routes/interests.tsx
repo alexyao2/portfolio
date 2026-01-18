@@ -23,7 +23,7 @@ export default function Interests() {
       title: "Wiffleball Trip Vlog 2025", 
       videoId: "hWi6ii4Ui4M",
       description: "Lake Anna Retreat Vlog 2025",
-      tags: ["Color Grading", "Premier Pro"] 
+      tags: ["Color Grading", "Premiere Pro"] 
     },
   ];
 
