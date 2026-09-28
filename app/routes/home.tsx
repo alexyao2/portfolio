@@ -12,11 +12,10 @@ export default function Home() {
               <p className="hero-greeting">Hello😄! I'm</p>
               <h1 className="hero-title">Alexander Yao</h1>
               <p className="hero-description">
-                I'm a Junior studying computer science @ University of Maryland, College Park. I am an aspiring software engineer and full stack developer
-                with a passion for building impactful applications and exploring new technologies!
+                I'm a senior studying Computer Science with a minor in Applied Mathematics at the University of Maryland, College Park, graduating in December 2026. I build data pipelines and analytics applications, and I'm seeking full-time data science and analytics roles starting in January 2027.
               </p>
               <p className="hero-cta">
-                I'm currently doing research @ George Mason University. In my free time I enjoy filming/editing videos, playing video games, and exploring new music! You can find my <a href="/portfolio/resume.pdf" className="internal-link">resume here</a>.
+                I'm currently a Data Science Analyst at EMI Advisors. Previously, I worked on market-data pipelines and options backtesting at Icarus Fund and a QUIC media-streaming testbed at George Mason University. Outside of work, I enjoy filming/editing videos, playing video games, and exploring new music! You can find my <a href="/portfolio/resume.pdf" className="internal-link">resume here</a>.
               </p>
             </div>
             
@@ -33,10 +32,10 @@ export default function Home() {
           <div className="featured-project-card">
             <div className="card-top">
               <div className="card-titles">
-                <h3>NBA Ref Analytics</h3>
-                <p>A full-stack referee trend dashboard with NBA season filters, foul-differential analysis, home-bias indicators, and outlier detection.</p>
+                <h3>Trade War Monitor</h3>
+                <p>An interactive dashboard exploring policy events alongside historical Brent prices, with scheduled market-data collection and rolling statistical anomaly scores available through a FastAPI backend.</p>
               </div>
-              <a href="https://github.com/alexyao2/nba-ref-analytics" target="_blank" rel="noreferrer" title="View Source" className="card-icon">
+              <a href="https://github.com/alexyao2/trade-war-monitor" target="_blank" rel="noreferrer" title="View Source" className="card-icon">
                 <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -44,10 +43,9 @@ export default function Home() {
             </div>
             
             <ul className="tech-tags-minimal">
-              <li>React + Vite</li>
+              <li>Python</li>
               <li>FastAPI</li>
-              <li>Docker Compose</li>
-              <li>Nginx</li>
+              <li>React / TypeScript</li>
             </ul>
           </div>
           
@@ -61,9 +59,9 @@ export default function Home() {
               <h3>Languages</h3>
               <ul>
                 <li>JavaScript / TypeScript</li>
-                <li>Python</li>
+                <li>Python / SQL</li>
                 <li>Java</li>
-                <li>C / C++</li>
+                <li>C</li>
                 <li>HTML & CSS</li>
               </ul>
             </div>
@@ -71,19 +69,19 @@ export default function Home() {
               <h3>Frameworks & Libraries</h3>
               <ul>
                 <li>React</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Flask</li>
-                <li>Pandas</li>
+                <li>FastAPI</li>
+                <li>pandas / NumPy</li>
+                <li>SQLAlchemy</li>
+                <li>PyArrow</li>
               </ul>
             </div>
             <div className="skill-item">
               <h3>Tools & Platforms</h3>
               <ul>
                 <li>Git & GitHub</li>
-                <li>Docker</li>
-                <li>AWS</li>
-                <li>VS Code</li>
+                <li>Docker / Docker Compose</li>
+                <li>DuckDB / SQLite</li>
+                <li>Nginx</li>
                 <li>Linux</li>
               </ul>
             </div>

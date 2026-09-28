@@ -5,21 +5,27 @@ import { Link } from "react-router";
 export default function Projects() {
   const myProjects = [
     {
-      title: "NBA Ref Analytics",
-      description: "A full-stack analytics dashboard for exploring NBA referee trends, foul differential, home-bias indicators, consistency, and statistical outliers across seasons.",
-      tags: ["React", "FastAPI", "Python", "Docker", "Nginx"],
-      link: "https://github.com/alexyao2/nba-ref-analytics",
+      title: "Trade War Monitor",
+      description: "A Python pipeline collects energy, freight, and gold market indicators into SQLite. A React dashboard aligns sourced policy events with historical Brent prices, while the API provides rolling anomaly scores. The analysis is exploratory, not a forecast or a measure of causal impact.",
+      tags: ["Python", "pandas", "SQLite", "FastAPI", "React", "TypeScript"],
+      link: "https://github.com/alexyao2/trade-war-monitor",
     },
     {
-      title: "Cross-Platform Video Tracker",
-      description: "A data engineering pipeline that ingests, normalizes, and compares creator engagement metrics across YouTube and TikTok with a unified SQLite schema.",
-      tags: ["Python", "SQLite", "APIs", "Playwright", "CLI"],
-      link: "https://github.com/alexyao2/videotracker",
+      title: "NBA Referee Analytics",
+      description: "An interactive application for comparing NBA referee statistics across seasons. Includes game-weighted averages, foul differentials, z-score comparisons, and a custom home-favorability score. These descriptive indicators do not establish referee bias.",
+      tags: ["Python", "FastAPI", "React", "Docker Compose", "Nginx"],
+      link: "https://github.com/alexyao2/nba-ref-analysis",
+    },
+    {
+      title: "Video Performance Tracker",
+      description: "A Python pipeline that collects YouTube and TikTok engagement metrics into SQLite and calculates normalized engagement rates for cross-platform comparisons.",
+      tags: ["Python", "SQLite", "SQLAlchemy", "Playwright", "Docker"],
+      link: "https://github.com/alexyao2/cross-platform-video-tracker",
     },
     {
       title: "Personal Website",
-      description: "My personal website built with modern web technologies to showcase my portfolio and blog posts.",
-      tags: ["React Router", "TypeScript", "CSS", "GitHub Pages"],
+      description: "My personal website showcasing data projects, professional experience, and video editing interests.",
+      tags: ["React Router", "TypeScript", "CSS"],
       link: "https://github.com/alexyao2/portfolio",
     },
     {
