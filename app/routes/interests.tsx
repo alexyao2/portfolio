@@ -34,7 +34,10 @@ export default function Interests() {
     { id: 4, src: "photo4.jpg", alt: "Description of photo", size: "tall" },
     { id: 5, src: "photo5.jpg", alt: "Description of photo", size: "tall" },
     { id: 6, src: "photo6.jpg", alt: "Description of photo", size: "tall" },
-    { id: 7, src: "photo7.jpg", alt: "Description of photo", size: "small" }
+    { id: 7, src: "photo7.jpg", alt: "Description of photo", size: "small" },
+    { id: 8, src: "photo8.jpg", alt: "Description of photo", size: "wide" },
+    { id: 9, src: "photo9.jpg", alt: "Description of photo", size: "small" },
+    { id: 10, src: "photo10.jpg", alt: "Description of photo", size: "tall" },
   ];
 
   return (
