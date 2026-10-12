@@ -35,9 +35,9 @@ export default function Interests() {
     { id: 5, src: "photo5.jpg", alt: "West Lake, Hangzhou, China, 西湖", size: "tall" },
     { id: 6, src: "photo6.jpg", alt: "Cangqing Old Town, Hangzhou, China, 梦想小镇", size: "tall" },
     { id: 7, src: "photo7.jpg", alt: "Wuyun Mountain, 五云山", size: "small" },
-    { id: 8, src: "photo8.jpg", alt: "Description of photo", size: "wide" },
-    { id: 9, src: "photo9.jpg", alt: "Description of photo", size: "small" },
-    { id: 10, src: "photo10.jpg", alt: "Description of photo", size: "tall" },
+    { id: 8, src: "photo8.jpg", alt: "Niagra Falls, Ontario, Canada", size: "wide" },
+    { id: 9, src: "photo9.jpg", alt: "Sosocamo, Songbyrd, DC ", size: "small" },
+    { id: 10, src: "photo10.jpg", alt: "Aboretum, Washington DC", size: "tall" },
   ];
 
   return (
