@@ -113,10 +113,29 @@
     transition: transform 0.5s ease;
   }
   
-  .photo-item:hover img {
+  .photo_description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .photo-item:hover img{
     transform: scale(1.08);
   }
   
+  .photo-item:hover .photo_description {
+    opacity: 1;
+  }
+
   /* Photo Item Sizes */
   .photo-item.wide {
     grid-column: span 2;

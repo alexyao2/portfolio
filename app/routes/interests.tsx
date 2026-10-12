@@ -16,25 +16,25 @@ export default function Interests() {
       title: "UMCPTASA Junior Officer Intro", 
       videoId: "h5Kt-jZ2Yfg", 
       description: "Junior Officers '24-'25 Reveal Video.",
-      tags: ["Color Grading", "Premiere Pro"] 
+      tags: ["Premiere Pro"] 
     },
     { 
       id: 3, 
       title: "Wiffleball Trip Vlog 2025", 
       videoId: "hWi6ii4Ui4M",
-      description: "Lake Anna Retreat Vlog 2025",
-      tags: ["Color Grading", "Premiere Pro"] 
+      description: "Lake Anna Retreat Vlog 2025.",
+      tags: ["Premiere Pro"] 
     },
   ];
 
   const galleryImages = [
-    { id: 1, src: "photo1.jpg", alt: "Description of photo", size: "tall" },
-    { id: 2, src: "photo2.jpg", alt: "Description of photo", size: "wide" },
-    { id: 3, src: "photo3.jpg", alt: "Description of photo", size: "small" },
-    { id: 4, src: "photo4.jpg", alt: "Description of photo", size: "tall" },
-    { id: 5, src: "photo5.jpg", alt: "Description of photo", size: "tall" },
-    { id: 6, src: "photo6.jpg", alt: "Description of photo", size: "tall" },
-    { id: 7, src: "photo7.jpg", alt: "Description of photo", size: "small" },
+    { id: 1, src: "photo1.jpg", alt: "Cherry blossoms @ UMD", size: "tall" },
+    { id: 2, src: "photo2.jpg", alt: "West Lake, Hangzhou, China, 西湖", size: "wide" },
+    { id: 3, src: "photo3.jpg", alt: "My UMCP TASA family!", size: "small" },
+    { id: 4, src: "photo4.jpg", alt: "Cangqing Old Town, Hangzhou, China, 梦想小镇", size: "tall" },
+    { id: 5, src: "photo5.jpg", alt: "West Lake, Hangzhou, China, 西湖", size: "tall" },
+    { id: 6, src: "photo6.jpg", alt: "Cangqing Old Town, Hangzhou, China, 梦想小镇", size: "tall" },
+    { id: 7, src: "photo7.jpg", alt: "Wuyun Mountain, 五云山", size: "small" },
     { id: 8, src: "photo8.jpg", alt: "Description of photo", size: "wide" },
     { id: 9, src: "photo9.jpg", alt: "Description of photo", size: "small" },
     { id: 10, src: "photo10.jpg", alt: "Description of photo", size: "tall" },
@@ -70,6 +70,7 @@ export default function Interests() {
           {galleryImages.map((image) => (
             <div key={image.id} className={`photo-item ${image.size}`}>
               <img src={image.src} alt={image.alt} loading="lazy" />
+              <div className="photo-description">{image.alt}</div>
             </div>
           ))}
         </div>
